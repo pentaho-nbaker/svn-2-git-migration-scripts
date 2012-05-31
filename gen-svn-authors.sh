@@ -10,4 +10,4 @@ function usage {
 DOMAIN="@pentaho.com"
 
 echo "Building svn authors list for $1..."
-svn log -q $1 | awk -v DOMAIN=$DOMAIN -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" = "$2" <"$2DOMAIN">"}' | sort -u >> authors-tmp.txt
+svn log -q $1 | awk -v DOMAIN=$DOMAIN -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" = "$2" <"$2DOMAIN">"}' | sort -u
