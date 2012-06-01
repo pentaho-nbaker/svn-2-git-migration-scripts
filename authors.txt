@@ -76,3 +76,5 @@ wdeclerc = wdeclerc <wdeclerc@pentaho.com>
 wgorman = Will Gorman <wgorman@pentaho.com>
 wseyler = William Seyler <wseyler@pentaho.com>
 ykim = ykim <ykim@pentaho.com>
+lboudreau = Luc Boudreau <lboudreau@pentaho.com>
+rbelen = Rowell Belen <rbelen@pentaho.com>
