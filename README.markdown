@@ -25,3 +25,8 @@ In the event that a subversion project was created as a copy of another the migr
 ### Reparenting branches
 
 The `git-replace-parent.sh` script was useful to fix branchs when migrating the Mondrian project from Perforce. It will likely not be needed for any Subversion migration but it exists incase we need to manually fix branch histories. For more information see http://stackoverflow.com/questions/3810348/setting-git-parent-pointer-to-a-different-parent.
+
+## Aftermath
+
+- Move the subversion repository to the "archive" section. Preserving the structure as much as possible
+- Update the wiki with the project you've migrated, old and new locations: http://wiki.pentaho.com/display/PEOpen/Project+Migration+List
