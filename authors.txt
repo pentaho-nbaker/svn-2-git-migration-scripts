@@ -89,3 +89,4 @@ bchow = Benny Chow <bchow@pentaho.com>
 mburgess = Matt Burgess <mburgess@pentaho.com>
 bholecko = Brian Holecko <bholecko@pentaho.com>
 bseyler = William Seyler <wseyler@pentaho.com>
+jthomas = Jeff Thomas <jthomas@pentaho.com>
