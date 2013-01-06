@@ -90,3 +90,4 @@ mburgess = Matt Burgess <mburgess@pentaho.com>
 bholecko = Brian Holecko <bholecko@pentaho.com>
 bseyler = William Seyler <wseyler@pentaho.com>
 jthomas = Jeff Thomas <jthomas@pentaho.com>
+lgrill = Larry Grill <lgrill@pentaho.com>
