@@ -2,10 +2,12 @@
 __author__ = 'nbaker'
 import json
 import urllib
+import urllib2
 import os
 import commands
 import sys
 import logging
+from base64 import encodestring
 
 
 logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
@@ -24,12 +26,20 @@ try:
       os.makedirs(backup_location)
 
   url = 'https://api.github.com/orgs/pentaho/repos'
-  u = urllib.urlopen(url)
-  data = u.read();
+
+  request = urllib2.Request(url)
+  request.add_header('Authorization', 'Basic %s' % "cGVudGFob2FkbWluOnp6MXFTR1ZH".replace('\n', ''))
+  res = urllib2.urlopen(request)
+  data = res.read();
+
   repos = json.loads(data);
+
+  # print repos
   for r in repos:
     name = r['name']
-    url = r['clone_url']
+    url = "git@github.com:%s.git" % r['full_name']
+    logging.info(url)
+
     repoLocation  = backup_location + os.sep + name;
     if not os.path.exists(repoLocation):
       logging.info('cloning: ' + name)
