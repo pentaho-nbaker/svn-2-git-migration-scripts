@@ -6,8 +6,32 @@ This is a collection of scripts and files to support the migration of Pentaho su
 
 A fairly comprehensive authors file is included as authors.txt. Please update this if you have changes and use it for all migrations.
 
-Here's a the command to pull in all history for a project using the provided authors file:
-`sh git-svn-migrate.sh $SVN_REPO_URL authors.txt`
+We're using the svn2git migration tool to perform the import. Follow the setup instructions on the svn2git project page:  
+https://github.com/nirvdrum/svn2git  
+
+One setup execute the following to import a subversion project:
+
+    # svn2git doesn't create a folder for you, do so yourself
+    mkdir NEW_REPO  
+    cd NEW_REPO  
+
+    # Assumes you've cloned this repo to the parent directory
+    svn2git $SUBVERSION_FOLDER_URL  --authors ../svn-git-migration-scripts/authors.txt  
+      optional: --nobranches --notags  
+
+    # remove deleted branches and tags, we don't want them.
+    git branch -a | grep @ | xargs git branch -d  
+    git tag | grep @ | xargs git tag -d  
+
+    add .gitignore and .gitattributes files  
+       "git add" then "git commit" them  
+  
+    git remote add origin $GITHUB_URL  
+    git push origin master  
+       (optionally push other branches)  
+  
+    git push origin --tags  
+
 
 ## Generating an authors file
 
