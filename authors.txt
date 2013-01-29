@@ -144,3 +144,4 @@ wseyler = wseyler <wseyler@pentaho.com>
 jpaz = John Paz <jpaz@pentaho.com>
 adeshazor = Anthony DeShazor <adeshazor@pentaho.com>
 bchow = Benny Chow <bchow@pentaho.com>
+krivera = Kris Rivera <krivera@pentaho.com>
