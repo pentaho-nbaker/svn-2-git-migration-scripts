@@ -23,10 +23,9 @@ One setup execute the following to import a subversion project:
     git branch -a | grep @ | xargs git branch -d  
     git tag | grep @ | xargs git tag -d  
     
-    # Normalize line-endings
-    cd ..
-    zip -qr normal.zip $YOUR_REPO_DIR && unzip -aqo normal.zip && rm normal.zip
-    cd $YOUR_REPO_DIR
+    # Normalize line-endings, run from the directory right above your repo
+    zip -qr normal.zip NEW_REPO && unzip -aqo normal.zip && rm normal.zip
+    
     
     # Add in our stadard .gitignore and .gitattributes files as found in this repo.
        "git add" then "git commit" them  
