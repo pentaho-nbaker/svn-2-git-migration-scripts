@@ -19,11 +19,16 @@ One setup execute the following to import a subversion project:
     svn2git $SUBVERSION_FOLDER_URL  --authors ../svn-git-migration-scripts/authors.txt  
       optional: --nobranches --notags  
 
-    # remove deleted branches and tags, we don't want them.
+    # Remove deleted branches and tags, we don't want them.
     git branch -a | grep @ | xargs git branch -d  
     git tag | grep @ | xargs git tag -d  
-
-    add .gitignore and .gitattributes files  
+    
+    # Normalize line-endings
+    cd ..
+    zip -qr normal.zip $YOUR_REPO_DIR && unzip -aqo normal.zip && rm normal.zip
+    cd $YOUR_REPO_DIR
+    
+    # Add in our stadard .gitignore and .gitattributes files as found in this repo.
        "git add" then "git commit" them  
   
     git remote add origin $GITHUB_URL  
