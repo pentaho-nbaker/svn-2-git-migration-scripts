@@ -56,6 +56,7 @@ mattcasters = Matt Casters <mcasters@pentaho.com>
 mbaker = Marina Baker <mbaker@pentaho.com>
 mbatchelor = Marc Batchelor <mbatchelor@pentaho.com>
 mburgess = Matt Burgess <mburgess@pentaho.com>
+mcampbell = Matt Campbell <mkambol@gmail.com>
 mcarina = Maria Carina <maria.carina.roldan@gmail.com>
 mcasters = Matt Casters <mcasters@pentaho.com>
 mdamour = Michael D'Amour <mdamour@pentaho.com>
