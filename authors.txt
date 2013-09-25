@@ -46,6 +46,7 @@ jtcornelius = Jake Cornelius <jtcornelius@pentaho.com>
 jthomas = Jeffrey Thomas <jthomas@pentaho.com>
 jvanhent = Johnny Vanhentenryk <johnny.vanhentenryk@ixor.be>
 kcruzada = kcruzada <kcruzada@pentaho.com>
+krivera = Kris Rivera <krivera@pentaho.com>
 ksorensen = Kasper Sørensen <kasper@eobjects.dk>
 lboudreau = Luc Boudreau <lucboudreau@gmail.com>
 lcheng = Lee Cheng <lcheng@pentaho.com>
