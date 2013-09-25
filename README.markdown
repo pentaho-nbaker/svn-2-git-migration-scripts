@@ -21,7 +21,7 @@ One setup execute the following to import a subversion project:
 
     # When importing from the internal SVN, you might need to provide
     # your username and password. You will need to use the following arguments:
-    svn2git -v --username [username] --authors ../svn-git-migration-scripts/authors.txt
+    svn2git $SUBVERSION_FOLDER_URL -v --username [username] --authors ../svn-git-migration-scripts/authors.txt
 
     # Remove deleted branches and tags, we don't want them.
     git branch -a | grep @ | xargs git branch -d  
@@ -37,7 +37,11 @@ One setup execute the following to import a subversion project:
     git remote add origin $GITHUB_URL  
     git push origin master  
        (optionally push other branches)  
-  
+
+    # To push all branches
+    git push origin --all
+
+    # To push all tags  
     git push origin --tags  
 
 
