@@ -1,5 +1,6 @@
 account = Name <Mail>
 adeshazor = Anthony DeShazor <adeshazor@pentaho.com>
+adphillips = adphillips <adphillips@pentaho.com>
 aphillips = Aaron Phillips <aphillips@pentaho.com>
 arodriguez = Angelo Rodriguez <arodriguez@pentaho.com>
 asilva = Alex Silva <asilva@pentaho.com>
@@ -77,6 +78,7 @@ mungady = mungady <mungady@users.sourceforge.net>
 nbaker = Nick Baker <nbaker@pentaho.com>
 ngoodman = Nicholas Goodman <ngoodman@bayontechnologies.com>
 nico.ben = Nicola Benaglia <nico.benaz@gmail.com>
+(no author) = (no author) <(no author)@pentaho.com>
 ocke = ocke <ocke@users.sourceforge.net>
 pbzdyl = pbzdyl <pbzdyl@users.sourceforge.net>
 pcole = Phillip Cole <filcole@gmail.com>
